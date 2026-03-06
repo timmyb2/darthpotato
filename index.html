@@ -1,47 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Fur & Fear – Bunny Fight Club</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Gallery</title>
 
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #141414;
+      --text: #f2f2f2;
+      --muted: #bdbdbd;
+      --border: #2a2a2a;
+      --max: 980px;
+    }
 
-        .container {
-            text-align: center;
-        }
+    * { box-sizing: border-box; }
 
-        img {
-            max-width: 320px;
-            width: 80%;
-            height: auto;
-        }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
 
-        h1 {
-            margin-top: 20px;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-    </style>
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      display: block;
+      margin: 0 auto 12px auto;
+    }
+
+    .label {
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <img src="fur-and-fear.png" alt="Fur & Fear Bunny Fight Club Logo">
-        <img src="beathebumblebee.png" alt="bea thebumble bee Logo">
-        <img src="alamarama.png" alt="A lama rama Logo">
-        <h1>Fur &amp; Fear</h1>
-    </div>
+  <div class="wrap">
+    <header>
+      <h1>Brand Marks</h1>
+      <p>Monochrome logo set</p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <img src="fur-and-fear.png" alt="Fs="label">Fur &amp; Fear</div>
+        <div class="sub">Bunny mark</div>
+      </section>
+
+      <section class="card">
+        <img src="alamarama.png" alt="A-Lama-Rama logoa‑Rama</div>
+        <div class="sub">Llama mark</div>
+      </section>
+
+      <section class="card">
+        <img src="beathebumblebee.png" alt="Bea the Bumble the Bumblebee</div>
+        <div class="sub">Side-profile bee mark</div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
+``
